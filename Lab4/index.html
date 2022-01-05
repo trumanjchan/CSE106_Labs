@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Truman's Calculator</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="myScript.js"></script>
+    </head>
+
+    <body>
+        <div class="home-container">
+            <div class="calculator-container">
+                <p class="calculator-current"></p>
+                <button onclick="clearCalc()"           class="clear">C</button>
+                <button onclick="oneCalc()"             class="one">1</button>
+                <button onclick="twoCalc()"             class="two">2</button>
+                <button onclick="threeCalc()"           class="three">3</button>
+
+                <button onclick="operatorCalc('/'); divideSymbol('/')"     class="divide">/</button>
+
+                <button onclick="fourCalc()"            class="four">4</button>
+                <button onclick="fiveCalc()"            class="five">5</button>
+                <button onclick="sixCalc()"             class="six">6</button>
+
+                <button onclick="operatorCalc('*'); multiplySymbol('*')"     class="multiply">*</button>
+
+                <button onclick="sevenCalc()"           class="seven">7</button>
+                <button onclick="eightCalc()"           class="eight">8</button>
+                <button onclick="nineCalc()"            class="nine">9</button>
+
+                <button onclick="operatorCalc('-'); minusSymbol('-')"     class="minus">-</button>
+
+                <button onclick="zeroCalc()"            class="zero">0</button>
+                <button onclick="decimalCalc()"         class="decimal">.</button>
+
+                <button onclick="operatorCalc('+'); addSymbol('+')"     class="add">+</button>
+
+                <button onclick="boolChange()"           class="equal">=</button>
+            </div>
+        </div>
+
+    </body>
+</html>

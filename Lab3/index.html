@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>PKMN Simulator - Home</title>
+        <link rel="stylesheet" href="index.css">
+
+        <style>
+            @media only screen and (max-width: 800px) {
+                .grid_container { 
+                    grid-template-columns: 100%;
+                }
+                .vid_container {
+                    margin: auto;
+                    width: calc(80vw);
+                }
+                video {
+                    width: calc(80vw);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul class="navbar">
+            <img class="logo" src="pokemon-logo.png" alt="Pokemon Logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Items.html">Items</a></li>
+            <li><a href="Pokemon.html">Pokemon</a></li>
+            <li><a href="Store.html">Store</a></li>
+        </ul>
+        <div class="home_heading_container">
+            <div class="title">
+                <h>Welcome to Pokemon Simulator!</h>
+            </div>
+            <div class="vid_container">
+                <video controls>
+                    <source src="Pokemon_CR_pulls.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="home_description_container">
+            <div class="grid_container">
+                <div class="aboutus">
+                    <div class="title">
+                        <h>About Us</h>
+                    </div>
+                    <p>
+                        Pokemon Simulator is a static website created by <a target="_blank" href="https://www.linkedin.com/in/trumanjfchan/">Truman Chan</a> on 9/27/2021 for his Full Stack Development (CSE106) Lab03 assignment.
+                        <br>
+                        <br>
+                        On PS, you will encounter Pokemon Trading Card Game content on the Home and Store page. The Home page displays a video of Pokemon TCG booster pack openings and a table of all the Pokemon Sword & Shield expansion release dates. The Store page shows a picture of a S&S booster pack. The Items and Pokemon pages display some <a target="_blank" href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Go">Pokemon Go</a>-related content.
+                    </p>
+                </div>
+                <div class="releasedates">
+                    <div class="title">
+                        <h>Sword & Shield Expansions</h>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                        </tr>
+                        <tr>
+                            <td>Fusion Strike</td>
+                            <td>November 12, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Evolving Skies</td>
+                            <td>August 27, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Chilling Reign</td>
+                            <td>June 18, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Battle Styles</td>
+                            <td>March 19, 2021</td>
+                        </tr>
+                        <tr>
+                            <td>Vivid Voltage</td>
+                            <td>November 13, 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Darkness Ablaze</td>
+                            <td>August 14, 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Rebel Clash</td>
+                            <td>May 01, 2020</td>
+                        </tr>
+                        <tr>
+                            <td>Sword & Shield</td>
+                            <td>Feburary 07, 2020</td>
+                        </tr>
+                    </table>
+                    <p class="sourcelink"><a target="_blank" href="https://www.pokemon.com/us/pokemon-tcg/trading-card-expansions/">Source</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

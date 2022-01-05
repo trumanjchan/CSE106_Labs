@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.home-container {
+    background: linear-gradient(rgb(135, 237, 255), rgb(153, 255, 153));
+    height: calc(100vh);
+    display: grid;
+    align-content: center;
+}
+
+.calculator-container {
+    background: linear-gradient(rgb(255, 159, 159), rgb(255, 244, 92));
+    height: calc(70vh);
+    width: 50%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 16% 16% 16% 16% 16%;
+    grid-template-areas: 
+        "current current current current current"
+        ". . . . clear"
+        "one two three divide ."
+        "four five six multi ."
+        "seven eight nine minus ."
+        "zer zer deci addition equal";
+}
+.calculator-current {
+    grid-area: current;
+    background-color: white;
+    padding: 0% 2% 0% 2%;
+    /* overflow-x: scroll; */
+}
+p {
+    margin: 0;
+    font-size: 70px;
+}
+
+button {
+    font-size: 40px;
+}
+.clear {
+    grid-area: clear;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.divide {
+    grid-area: divide;
+}
+.divide:active {
+    background: red;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.multiply {
+    grid-area: multi;
+}
+.multiply:active {
+    background: red;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.minus {
+    grid-area: minus;
+}
+.minus:active {
+    background: red;
+}
+.zero {
+    grid-area: zer;
+}
+.decimal {
+    grid-area: deci;
+}
+.sign {
+    grid-area: sign;
+}
+.add {
+    grid-area: addition;
+}
+.add:active {
+    background: red;
+}
+.equal {
+    grid-area: equal;
+}

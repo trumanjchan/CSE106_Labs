@@ -1,0 +1,80 @@
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+li {
+    padding: 0% 2% 0% 2%;
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar {
+    background-color: #97D1E8;
+    border-bottom: 2px solid;
+    padding: 1% 0% 1% 0%;
+    margin: 0;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+.logo {
+    position: absolute;
+    width: calc(20vw);
+    top: 0;
+    left: 0;
+}
+a:visited {
+    color: rgb(0, 68, 255);
+}
+body {
+    margin: 0;
+}
+
+.home_heading_container {
+    height: calc(100vh);
+    width: 100%;
+    background: linear-gradient(#4FB9E3, #97D1E8);
+    display: grid;
+    align-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.title {
+    margin: auto;
+    width: 70%;
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+    padding: 5% 0% 5% 0%;
+}
+h a {
+    text-decoration: none;
+}
+h a:link, h a:visited {
+    color: rgb(0, 38, 255);
+}
+.reviews {
+    font-size: 20px;
+    
+}
+.price {
+    font-size: 25px;
+}
+input {
+    display: inline-block;
+    width: 17%;
+    height: 10%;
+    text-align: center;
+    font-size: 20px;
+}
+button {
+    display: inline-block;
+    color: white;
+    background-color: #f3a229;
+    width: 50%;
+    height: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.boosterpacks {
+    width: calc(35vw);
+}

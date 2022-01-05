@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: calc(100vh);
+}
+.grid-container {
+    background-color: rgb(188, 211, 255);
+    height: calc(100vh);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+.forms {
+    background-color: rgb(219, 255, 205);
+    display: grid;
+    align-content: center;
+    width: 90%;
+    height: calc(90vh);
+    margin: auto 0 auto auto;
+}
+button {
+    display: block;
+    margin: auto;
+    padding: 1%;
+    font-size: 18px;
+}
+.output {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    width: 90%;
+    height: calc(90vh);
+    margin: auto auto auto 0;
+}
+#demo {
+    color: white;
+    width: 95%;
+    word-wrap: break-word;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.6;
+}

@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title>Truman's Flask App w/ SQLAlchemy</title>
+        <link rel="stylesheet" href="/static/index7.css">
+        <script type="text/javascript" src="{{ url_for('static', filename='myScript7.js') }}"></script>
+
+        <style>
+            @media only screen and (min-width: 0px) {
+                .output {
+                    overflow-y: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="grid-container">
+            <div class="forms">
+                <button type="button" onclick="loadDoc1()">GET student's Grade</button>
+                <button type="button" onclick="loadDoc2()">GET all Students and Grades</button>
+                <button type="button" onclick="loadDoc3()">POST a new Student and Grade</button>
+                <button type="button" onclick="loadDoc4()">PUT a student's Grade</button>
+                <button type="button" onclick="loadDoc5()">DELETE a Student</button>
+            </div>
+            <div class="output">
+                <div id="demo">
+                    <table border = 5>
+                        {% for i in students %}
+                            <tr>
+                                <td>{{ i.name }}</td>
+                                <td>{{ i.grade }}</td>
+                            </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

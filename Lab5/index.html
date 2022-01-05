@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Truman's Grades App</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="myScript.js"></script>
+
+        <script src="https://amhep.pythonanywhere.com"></script>
+
+        <style>
+            @media only screen and (min-width: 0px) {
+                .output { 
+                    overflow-y: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="grid-container">
+
+            <div class="forms">
+                <button type="button" onclick="loadDoc1()">GET student's Grade</button>
+                <button type="button" onclick="loadDoc2()">GET all Students and Grades</button>
+                <button type="button" onclick="loadDoc3()">POST a new Student and Grade</button>
+                <button type="button" onclick="loadDoc4()">PUT a student's Grade</button>
+                <button type="button" onclick="loadDoc5()">DELETE a Student</button>
+            </div>
+
+            <div class="output">
+                <div id="demo"></div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
